@@ -1,0 +1,111 @@
+<h1>Pipes de Angular para textos</h1>
+<hr>
+<table>
+    <tr>
+        <th>Pipe</th>
+        <th>Valor propiedad</th>
+        <th>Valor modificado con el pipe</th>
+    </tr>
+    <tr>
+        <td>Uppercase</td>
+        <td>{{texto}}</td>
+        <td>{{texto | uppercase}}</td>
+    </tr>
+    <tr>
+        <td>Lowercase</td>
+        <td>{{texto}}</td>
+        <td>{{texto | lowercase}}</td>
+    </tr>
+    <tr>
+        <td>Titlecase</td>
+        <td>{{texto}}</td>
+        <td>{{texto | titlecase}}</td>
+    </tr>
+    <tr>
+        <td>Slice</td>
+        <td>{{id}}</td>
+        <td>{{id | slice: -6}}</td>
+    </tr>
+</table>
+<hr>
+<h1>Pipe de Angular para fechas</h1>
+<hr>
+<table>
+    <tr>
+        <th>Pipe</th>
+        <th>Valor</th>
+        <th>Valor modificado con el pipe</th>
+    </tr>
+    <tr>
+        <td>date</td>
+        <td>{{fecha}}</td>
+        <td>{{fecha | date: "dd/MM/yyyy hh:mm"}}</td>
+    </tr>
+    <tr>
+        <td>date</td>
+        <td>{{fecha}}</td>
+        <!-- long medium short -->
+        <td>{{fecha | date: "short"}}</td>
+    </tr>
+</table>
+<hr>
+<h1>Pipes de Angular para números</h1>
+<hr>
+<table>
+    <tr>
+        <th>Pipe</th>
+        <th>Valor</th>
+        <th>Valor modificado con el pipe</th>
+    </tr>
+    <tr>
+        <td>Decimal</td>
+        <td>{{importe}}</td>
+        <!-- número de enteros.número mínimo de decimales-número máximo de decimales -->
+        <td>{{importe | number: "6.2-2"}}</td>
+    </tr>
+    <tr>
+        <td>Percent</td>
+        <td>{{aciertos}}</td>
+        <td>{{aciertos | percent: '2.2-2'}}</td>
+    </tr>
+    <tr>
+        <td>Currency</td>
+        <td>{{importe}}</td>
+        <td>{{importe | currency: 'EUR'}}</td>
+    </tr>
+</table>
+<hr>
+<h1>Pipes de Angular para desarrollo</h1>
+<hr>
+<table>
+    <tr>
+        <th>Pipe</th>
+        <th>Valor</th>
+        <th>Valor modificado con el pipe</th>
+    </tr>
+    <tr>
+        <td>JSON (Visualizar objetos)</td>
+        <td>{{actor}}</td>
+        <td>{{actor | json}}</td>
+    </tr>
+</table>
+<hr>
+<h1>Pipes propios</h1>
+<hr>
+<table>
+    <tr>
+        <th>Pipe</th>
+        <th>Valor</th>
+        <th>Valor modificado con el pipe</th>
+    </tr>
+    <tr>
+        <td>Pipe propio 'numero'</td>
+        <td>{{importe}}</td>
+        <td>{{importe | numero: 2}}</td>
+    </tr>
+    <tr>
+        <td>Pipe propio 'numero'</td>
+        <td>{{baseImponible}}</td>
+        <td>{{baseImponible | numero: 2: ' €'}}</td>
+    </tr>
+</table>
